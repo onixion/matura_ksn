@@ -1,0 +1,18 @@
+\section{Verschlüsselung}
+
+Verschlüsselung ist in der heutigen Netzwerktechnik sehr wichtig. Damit Daten nicht von Fremde gelesen oder verändert werden können, werden kryptographische Systeme entwickelt. Diese Systeme sollen verhindert, dass unbefugte Personen die Aussage der übertragenen Informationen verstehen können. Die Aussage der Information wird mithilfe des kryptographischen Systems verschleiert und nur mithilfe des richtigen Schlüssels kann die Nachricht entschlüsselt werden.\\
+
+Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (man spricht auch von Verschlüsselungsverfahren)
+
+\begin{itemize}
+\item \textbf{symmetrische Verschlüsselungen}: Bei dieser Art der Verschlüsselung wird bei der Ver- als auch bei der Entschlüsselung der gleiche Schlüssel verwendet.
+\item \textbf{asymmetrische Verschlüsselungen}: Bei dieser Art von Verschlüsselung wird bei der Verschlüsselung ein andere Schlüssel verwendet als bei der Entschlüsselung. Man unterscheidet den Public-Key und Privat-Key. Wenn die Daten mit dem Public-Key verschlüsselt werden, können sie nur mit dem Privat-Key entschlüsselt werden. Werden die Daten mit dem Privat-Key verschlüsselt, können sie nur mit dem Public-Key entschlüsselt werden. Weil die asymmetrischen Systeme so funktionieren, können sie auf zwei Arten verwendet werden:
+
+  \begin{itemize}
+	\item Daten werden mit dem Privat-Key verschlüsselt: Da die Öffentlichkeit die Daten entschlüsseln können, muss (sofern das kryptographische System nicht geknackt wurde) der Sender dieser Information, im Besitzt des Privat-Keys sein. Damit ist bewiesen, dass sie wirklich mit dem richtigen Partner verschlüsseln und nicht mit einem Man-in-the-Middle.
+	\item Daten werden mit dem Public-Key verschlüsselt: Da die Öffentlichkeit im Besitzt des öffentlichen Schlüssels ist, können sie die Daten mit ihm verschlüsseln und absenden. Nur derjenige, der im Besitzt des Privat-Keys ist, kann die Aussage dieser Information verstehen.
+  \end{itemize}
+
+\end{itemize}
+
+
