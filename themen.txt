@@ -1,15 +1,15 @@
--Schichtenmodelle
+﻿-Schichtenmodelle (Mani)
    -OSI Übersicht
    -TCP/IP Übersicht
    -Gegenüberstellung OSI-TCP/IP
 
--Switch und switchting
+-Switch und switchting (Mani)
    -Switchingtable 
    -Funktionsweise
    -VLAN
    -Hub/Switch/Layer 3 Switch   
 
--Router und routing
+-Router und routing (Mani)
    -Routingtable
    -Funktionsweise
    -Routingprotokolle (RIP,OSPF)
@@ -34,7 +34,7 @@
    -Endpoint-Security
    -Spanning Tree Manipulation
 
--Firewalls
+-Firewalls (Mani)
    -Aufgaben
    -ACL
    -Stateful Inspection
@@ -59,7 +59,7 @@
    -Tunnel
    -Anwendungsgebiete
 
--Cloud (Alin)
+-Cloud (Alin) (Mani)
    -Grundidee
    -Arten
    -Zukunft 
