@@ -1,0 +1,24 @@
+
+_______________________
+
+Cloud
+-----
+
+Was ist eine Cloud?
+	- Bei der Cloud geht es um die Idee, die Ressourcen von Computern zu verlagern.
+	- Also anstatt die Hardware-Ressource lokale im Gerät zu haben, gibt man die Daten in die Cloud.
+	- Die Cloud besteht aus vielen starken Server (können virtualisiert sein), viel Speicherplatz, viel Leistung, gute Kühlung usw.
+	- tragbare Laptops können leistungsarm sein, mit wenig Speicher und es können Trotzdem rechenintensive Operationen durchgeführt werden,
+	weil die Ausarbeitung der Operation nicht lokal sondern in der Cloud passiert.
+Arten von Clouds
+	- Cloud Computing
+	- Cloud Storage
+Vorteile und Nachteile
+	- Mobile Geräte brauchen weniger Speicher / Leistung
+	- Privatsfaire bei Daten (kann umgangen werden mit Verschlüsselung)
+_______________________
+
+1.) Wie haben Sie die Kommunikation zwischen CLI-Server und CLI-Client realisiert?
+2.) Wie haben Sie den ThreadPool realisiert? 
+3.) Welche Programmiersprache haben Sie verwendet und warum?
+4.) Wo waren die Schierigkeiten bei der Entwicklung?

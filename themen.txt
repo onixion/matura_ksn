@@ -1,4 +1,22 @@
-﻿-Schichtenmodelle (Mani)
+﻿
+	1.) Thema: Was haben Sie getan?
+		-> Stufenaufbau
+		-> Folie ausarbeiten
+
+	2.) Umfeldfrage: KSN
+		-> Stufenaufbau
+		-> Folie ausarbeiten
+
+--------------------------------------------
+FRAGEN:
+
+	- Wie haben sie die Verschlüsselung realisiert?
+	- Wie funktioniert die Überprüfen von Diensten und Geräten?
+	- Ich habe Ihr Buch gelesen sowie ihre zahlreichen Vorlesung bezüglich der von Ihnen entwickelten fortgeschrittene Quantenmechanik-Teilchenbeschleuniger mit erweiterbarem Seifenspender gesehen. Meine Frage bezieht sich nicht auf die quantenmechanischen Vorgänge des Bosomen-Zerteiler oder der Positronen-Kanane. Vielmehr lautet meine Frage wie folgt: Wieso haben sie nicht einfache einen Kartoffelbatterie für die Diplomarbeit genommen?
+
+____________________________________________
+
+-Schichtenmodelle (Mani)
    -OSI Übersicht
    -TCP/IP Übersicht
    -Gegenüberstellung OSI-TCP/IP
@@ -9,7 +27,7 @@
    -VLAN
    -Hub/Switch/Layer 3 Switch   
 
--Router und routing (Mani)
+-Router und routing (Alin)
    -Routingtable
    -Funktionsweise
    -Routingprotokolle (RIP,OSPF)
@@ -17,7 +35,7 @@
    -NAT
    -Gerätetypen
 
--Protokolle (Alin)
+-Protokolle (Dani)
    -DNS
    -DHCP
    -TCP
@@ -25,7 +43,7 @@
    -IP(IPv6)
    -ARP
 
--Layer2 Security
+-Layer2 Security (Dani)
    -Man-in-the-Middle
    -ARP-Spoofing
    -ARP-Flooding
@@ -34,7 +52,7 @@
    -Endpoint-Security
    -Spanning Tree Manipulation
 
--Firewalls (Mani)
+-Firewalls (Dani)
    -Aufgaben
    -ACL
    -Stateful Inspection
@@ -59,7 +77,7 @@
    -Tunnel
    -Anwendungsgebiete
 
--Cloud (Alin) (Mani)
+-Cloud (Mani)
    -Grundidee
    -Arten
    -Zukunft 
