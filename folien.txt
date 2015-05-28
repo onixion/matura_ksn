@@ -1,4 +1,4 @@
-1. Schichtenmodelle 
+﻿1. Schichtenmodelle 
 	- Idee
 	- OSI Übersicht
    	- TCP/IP Übersicht
@@ -16,7 +16,7 @@ Cloud
 3.) Vorteile und Nachteil
 
 Verschlüsselung
----------------
+-----------------------------------------------------------------
 1.) Informationssicherheit
 	- Schutzziele
 
@@ -35,3 +35,6 @@ Verschlüsselung
 	- RSA
 	- DiffiHellman
 
+5.) Probleme/Lücken
+	- Zertifikate
+-----------------------------------------------------------------
