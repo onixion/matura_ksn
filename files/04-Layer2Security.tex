@@ -1,0 +1,15 @@
+\chapter{Layer 2 Security}
+\section{Man in the Middle Attack}
+\subsection{Tier1}
+Man in the Middle ist eine Praxis in welcher der Angreifer versucht sich, wie der Name bereits aussagt, zwischen den Clienten und seinem Gesprächspartner zu stellen. Sein Ziel dabei ist es, Das Gespräch mitzuhören um an wichtige Informationen zu kommen.
+\subsection{Tier2}
+Das durch den Namen hervorgerufene Bild von einem Mann der zwischen zwei Personen steht, ist natürlich nur ein Vergleich. In der Realität steht der Angreifer logisch zwischen dem Clienten und dem Server, was bedeutet, dass die Pakete nicht wie gewohnt und gewollt von PC zu Switch/Hub zu Router und so weiter bis zum Server fließen, sondern, dass sie irgendwo auf ihrem Weg vom RRechten Pfad abkommen und am PC des Bösewichtes landen.
+\subsection{Tier3}
+Möglichkeiten hierfür sind zum Beispiel das Vorspielen man sei ein DHCP Server. Wenn man es schafft schneller zu sein als der eigentliche DHCP Server, der unter Umständen sogar noch über ein Relay ganz wo anders liegt, und dadurch dem Opfer Rechner einen falschen Default Gateway gibt, wie zB die IP-Adresse des Angreifers, landet der Traffic welcher eigentlich ins Internet soll natürlich auf bei diesem Rechner. 
+
+\section{Denial of Service}
+\subsection{Tier1}
+Denial of Service oder abgekürzt DOS, ist englisch für \glqq Verhindern eines Services\grqq und beinhaltet jegliche Methoden die es dem Angreifer ermöglichen den Anbieter eines Dienstes an diesem zu hindern.
+\subsection{Tier2}
+Obwohl der Begriff theoretisch alles umfasst, wird er Umgangssprachlich hauptsächlich dafür verwendet, wenn ein Client einen Dienst absichtlich und mit bösartiger Absicht so sehr in Anspruch nimmt, dass dieser keine anderen Anfragen mehr beantworten kann bzw. zu lange zum beantworten braucht. 
+\subsection{Tier3}
