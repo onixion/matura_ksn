@@ -1,4 +1,3 @@
-
 _______________________
 
 Cloud
@@ -22,3 +21,36 @@ _______________________
 2.) Wie haben Sie den ThreadPool realisiert? 
 3.) Welche Programmiersprache haben Sie verwendet und warum?
 4.) Wo waren die Schierigkeiten bei der Entwicklung?
+_______________________
+
+
+
+
+
+
+
+
+
+
+
+Verschlüsselung
+---------------
+
+1.) Informationssicherheit
+	- Schutzziele
+
+2.) Was ist eine Verschlüsselung? Und wozu?
+
+3.) Verschlüsselungsverfahren
+	- symmetrisches Verfahren
+		- Blockchiffre
+		- Stromchiffre
+	- asymmetrisches Verfahren
+
+4.) Verschlüsselungssysteme
+	- DES
+	- TribleDES
+	- AES
+	- RSA
+	- DiffiHellman
+
