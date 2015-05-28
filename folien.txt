@@ -1,19 +1,26 @@
-﻿1. Schichtenmodelle 
-	- Idee
-	- OSI Übersicht
-   	- TCP/IP Übersicht
+﻿Schichtenmodelle 
+-----------------------------------------------------------------
+1.) Idee
+2.) OSI Übersicht
+3.) TCP/IP Übersicht
+-----------------------------------------------------------------
 
-2. Switching
-	- Allgemein
-	- VLAN
 
-Cloud
------
-1.) Was ist eine Cloud?
-2.) Arten von Clouds
-	- Cloud Computing
-	- Cloud Storage
-3.) Vorteile und Nachteil
+Switching
+-----------------------------------------------------------------
+1.) Allgemein
+2.) VLAN
+-----------------------------------------------------------------
+
+
+Cloud Computing
+-----------------------------------------------------------------
+1.) Idee
+2.) Nutzung
+3.) 
+-----------------------------------------------------------------
+
+
 
 Verschlüsselung
 -----------------------------------------------------------------
