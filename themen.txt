@@ -6,14 +6,6 @@
 	2.) Umfeldfrage: KSN
 		-> Stufenaufbau
 		-> Folie ausarbeiten
-
---------------------------------------------
-FRAGEN:
-
-	- Wie haben sie die Verschlüsselung realisiert?
-	- Wie funktioniert die Überprüfen von Diensten und Geräten?
-	- Ich habe Ihr Buch gelesen sowie ihre zahlreichen Vorlesung bezüglich der von Ihnen entwickelten fortgeschrittene Quantenmechanik-Teilchenbeschleuniger mit erweiterbarem Seifenspender gesehen. Meine Frage bezieht sich nicht auf die quantenmechanischen Vorgänge des Bosomen-Zerteiler oder der Positronen-Kanane. Vielmehr lautet meine Frage wie folgt: Wieso haben sie nicht einfache einen Kartoffelbatterie für die Diplomarbeit genommen?
-
 ____________________________________________
 
 -Schichtenmodelle (Mani)
@@ -77,7 +69,7 @@ ____________________________________________
    -Tunnel
    -Anwendungsgebiete
 
--Cloud (Mani)
+-Cloud Computing(Mani)
    -Grundidee
    -Arten
    -Zukunft 
