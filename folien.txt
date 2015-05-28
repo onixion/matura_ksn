@@ -1,0 +1,28 @@
+Cloud
+-----
+1.) Was ist eine Cloud?
+2.) Arten von Clouds
+	- Cloud Computing
+	- Cloud Storage
+3.) Vorteile und Nachteil
+
+Verschlüsselung
+---------------
+1.) Informationssicherheit
+	- Schutzziele
+
+2.) Was ist eine Verschlüsselung? Und wozu?
+
+3.) Verschlüsselungsverfahren
+	- symmetrisches Verfahren
+		- Blockchiffre
+		- Stromchiffre
+	- asymmetrisches Verfahren
+
+4.) Verschlüsselungssysteme
+	- DES
+	- TribleDES
+	- AES
+	- RSA
+	- DiffiHellman
+

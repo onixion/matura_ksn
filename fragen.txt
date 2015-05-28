@@ -1,0 +1,7 @@
+
+PORCIC - DIPLOM FRAGEN
+
+1.) Wie haben Sie die Kommunikation zwischen CLI-Server und CLI-Client realisiert?
+2.) Wie haben Sie den ThreadPool realisiert? 
+3.) Welche Programmiersprache haben Sie verwendet und warum?
+4.) Wo waren die Schierigkeiten bei der Entwicklung?
