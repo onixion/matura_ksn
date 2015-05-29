@@ -1,8 +1,8 @@
-\section{Verschlüsselung}
+\chapter{Verschlüsselung}
 
 Verschlüsselung ist in der heutigen Netzwerktechnik sehr wichtig. Damit Daten nicht von Fremde gelesen oder verändert werden können, werden kryptographische Systeme entwickelt. Diese Systeme sollen verhindert, dass unbefugte Personen die Aussage der übertragenen Informationen verstehen können. Die Aussage der Information wird mithilfe des kryptographischen Systems verschleiert und nur mithilfe des richtigen Schlüssels kann die Nachricht entschlüsselt werden.\\
 
-\subsection{Grundbegriff der Verschlüsselung}
+\section{Grundbegriff der Verschlüsselung}
 
 \begin{itemize}
 \item \textbf{Plaintext / Klartext}: Lesbare Informationen, diese Information gilt es zu schützen
@@ -10,14 +10,21 @@ Verschlüsselung ist in der heutigen Netzwerktechnik sehr wichtig. Damit Daten n
 \item \textbf{Cipher}: ist der Ent- und Verschlüsselungsalghoritmus
 \item \textbf{Encryption / Verschlüsselung}: der Vorgang mit dem aus lesbaren Informationen nicht-lesbare Informationen gemacht werden, hierzu wird in irgendeiner Weise ein Schlüssel benötigt
 \item \textbf{Decryption / Entschlüsselung}: der Vorgang mit dem aus den nicht-lesbaren Informationen lesbare Informationen gemacht werden, hierzu wird in irgendeiner Weise ebenfalls ein Schlüssel benötigt
-\item \textbf{Hash}: ist eine spezielles Verschlüsselungverfahren bei dem der Schlüssel eine beliebige Größe haben kann und das Resultat eine begrenzte Größe vorweist, die Möglichkeit den Schlüssel zu bestimmen sollte nicht möglich sein
 \end{itemize}
 
-\subsection{Informationssicherheit}
+\section{Informationssicherheit}
 
-BLAH BLAH
+Die Informationssicherheit ist die Eigenschaft eines informations-verarbeitendes System gewisse Schutzziele einzuhalten. Dies Schutzziele sind z.B.:
 
-\subsection{Arten der Verschlüsselung}
+\begin{itemize}
+\item \textbf{Vertraulichkeit}: Die Aussage der Information ist für unbefugte Personen nicht einsehbar.
+\item \textbf{Integrität}: Die Aussage der Information kann nicht verändert werden.
+\item \textbf{Authenzität}: Es ist möglich mit dem System die Authenzität zu beweisen (also: Ich kann beweisen, dass ich der bin für den ich mich ausgebe.).
+\end{itemize}
+
+Es gibt noch einige mehr, doch dies sind bei der Verschlüsselung die wichtigsten.
+
+\section{Arten der Verschlüsselung}
 
 Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (man spricht auch von Verschlüsselungsverfahren)
 
@@ -32,10 +39,66 @@ Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (m
   
 \end{itemize}
 
-\subsection{Nennenswerte Verschlüsselungsverfahren}
+\section{Nennenswerte Verschlüsselungsverfahren}
 
-\subsubsection{Symmetrische Verschlüsselungsverfahren}
+\subsection{Symmetrische Verschlüsselungsverfahren}
 
-\subsubsection{Unsymmetrische Verschlüsselungsverfahren}
+\subsubsection{DES}
 
-\subsubsection{Hybride Verschlüsselungsverfahren}
+\begin{itemize}
+\item DES steht für \textbf{Data Encryption Standard}
+\item wurde von IBM in den frühen 1970 Jahren entwickelt
+\item Schlüssellänge 64bit, nur 56bit davon nutzbar, da 8 Bit für die Prüfsummer verwendet wird
+\item wird heute aufgrund der Schlüssellänge für viele Anwendungen als nicht ausreichend sicher erachtet
+\end{itemize}
+
+\subsubsection{TribleDES}
+
+\begin{itemize}
+\item durch die dreifache Anwendung des DES, wird die Schlüssellänge erhöht
+\item obwohl dieser Standard von AES abgelöst wurde, findet dieser Standard noch verwendung (z.B. Banken Chipkartenanwendungen)
+\end{itemize}
+
+\subsubsection{AES}
+
+\begin{itemize}
+\item AES steht für \textbf{Advanced Encryption Standard}
+\item ist eine Blockchiffre (verschlüsselt als blockweise)
+\item wurde im Jahre 2000 vom NIST (National Institute of Standards and Technology) in einem Wettbewerb als Nachfolger des DES bekanntgegeben
+\item Schlüssellänge: 128, 192 oder 256 Bits
+\item wird heute als sicher eingestuft
+\end{itemize}
+
+\subsubsection{SEAL}
+
+\begin{itemize}
+\item SEAL steht für \textbf{Software-Optimized Encryption Algorithm}
+\item ist ein Stromcipher (stream cipher), verschlüsselt als zeichenweise
+\end{itemize}
+
+\subsection{Asymmetrische Verschlüsselungsverfahren}
+
+\subsubsection{Diffi-Hellman}
+
+\begin{itemize}
+\item wurde von Martin Hellman gemeinsam mit Whitefiel Diffie und Ralph Merkle an der Stanford-Universität 1976 veröffentlicht
+\end{itemize}
+
+\subsubsection{RSA}
+
+\begin{itemize}
+\item RSA entstand aus den Namen Rivest, Shamir und Adleman
+\item wird für Verschlüsselung und für digitale Signaturen verwendet
+\end{itemize}
+
+\subsection{Hybride Verschlüsselungsverfahren}
+
+\subsubsection{TLS}
+
+\begin{itemize}
+\item TLS steht für \textbf{Transport Layer Security}
+\item ist ein hybrides Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet
+\item wird heute vor allem mit HTTPS eingesetz
+\item TLS unterstützt verschiedene Verschlüsselungsmethoden: RSA, AES oder Camellia-Verschlüsselung
+\item arbeitet mit Zertifikaten
+\end{itemize}

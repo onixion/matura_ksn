@@ -1,0 +1,11 @@
+\chapter{VPN}
+
+VPN steht für \textbf{Virtual Private Network} und ist eine Schnittstelle zu einem privaten Netzwerk. Dabei werden die Pakete verschlüsselt, in VPN-Pakete gekapselt und an dem VPN-Server gesendet. Der VPN-Server entkapselt diese Pakete, entschlüsselt sie und spuckt sie als "normale" Pakete auf der anderen Seite wieder raus (das wird mit \textbf{tunneling} bezeichnet). Damit kann man sich über ein unsicheres Netzwerk (z.B. das Internet) in ein privates Netzwerk sicher einklinken. Die Pakete werden schon auf dem lokalen Computer verschlüsselt, d.h. keiner, außer ab den VPN-Server, können die Paket im Klartex lesen.
+
+\section{Arten von VPN-Verbindungen}
+
+\begin{itemize}
+\item \textbf{Host-to-Host}: Dies kennzeichnet eine sichere Verbindung zweier Computer, z.B. über das Internet
+\item \textbf{Host-to-Net}: wird auch als \textbf{Dial-Up Service} bezeichnet. Der Client verbindet sich und hängt sich in ein privates Netzwerk ein, als ob er sich physikalisch in das Netz eingehängt hätte, er bekommt eine private Adresse zugewiesen
+\item \textbf{Net-to-Net}: wird auch \textbf{LAN-Interconnect} bezeichnet, wird verwendet um zwei private Netzwerke transparent zu verbinden (z.B. die Zentral mit einem Außenstandort der Firma)
+\end{itemize}
