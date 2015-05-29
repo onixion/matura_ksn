@@ -1,47 +1,55 @@
-﻿Schichtenmodelle 
 -----------------------------------------------------------------
+﻿
+Schichtenmodelle 
 1.) Idee
 2.) OSI Übersicht
 3.) TCP/IP Übersicht
------------------------------------------------------------------
 
+-----------------------------------------------------------------
 
 Switching
------------------------------------------------------------------
 1.) Allgemein
 2.) VLAN
+
 -----------------------------------------------------------------
 
+Routing
+
+TODO
+
+-----------------------------------------------------------------
 
 Cloud Computing
------------------------------------------------------------------
 1.) Idee
 2.) Nutzung
 3.) 
+
 -----------------------------------------------------------------
-
-
 
 Verschlüsselung
------------------------------------------------------------------
 1.) Informationssicherheit
 	- Schutzziele
-
 2.) Was ist eine Verschlüsselung? Und wozu?
-
 3.) Verschlüsselungsverfahren
 	- symmetrisches Verfahren
 		- Blockchiffre
 		- Stromchiffre
 	- asymmetrisches Verfahren
-
 4.) Verschlüsselungssysteme
 	- DES
 	- TribleDES
 	- AES
 	- RSA
+		- Zertifikate (kurz erwähnen)
 	- DiffiHellman
+5.) Probleme
 
-5.) Probleme/Lücken
-	- Zertifikate
 -----------------------------------------------------------------
+
+VPN
+
+1.) Was ist VPN?
+2.) Arten?
+
+-----------------------------------------------------------------
+
