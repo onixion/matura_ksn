@@ -55,10 +55,54 @@ VPN
 
 Protokolle
 
-1.) Was sind Protokolle?
-2.) DHCP
+1) Was sind Protokolle? (Level 1)
 	-
-3.) ARP
-4.) SNMP
-5.) DNS
-6.) FTP
+2) Aufgaben eines Protokolls (Level 2)
+	-
+3) Typischer Aufbau eines Protokolls (Level 2)
+	-
+4) Spezifische Protokolle (Level 3)
+	4.1) DHCP
+		-
+	4.2) ARP
+		-
+	4.3) SNMP
+		-
+	4.4) DNS
+		-
+	4.5) FTP
+		-
+	4.6) HTTP
+		-
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   <-- i bin was besonderes i hab wellenlinien anstatt 
+gerader :D
+
+Firewalls
+
+1) Sinn und Aufgaben von Firewalls (Level 1)
+
+2) Arten von Firewalls (Level 2)
+	2.1) Personal Firewall
+	2.2) External Firewall
+
+3) Filtertechnologien (Level 3)
+	3.1) ACL
+	3.2) Stateful Inspection
+	3.39 Deep Inspection
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Netzwerksicherheit   <-- i hab is layer 2 weckglassen damit i auf mehr content kimm
+
+1) Was ist Netzwerksicherheit? (Level 1) 
+
+2) Aspekte der Netzwerksicherheit (Level 2)
+	2.1) Informationssicherheit 
+	2.2) AAA
+	
+3) Spezifische Beispiele für Gefahren und Lösungen
+	3.1) DOS
+	3.2) Man-In-The-Middle
+	3.3) Viren, Würmer, Trojaner
