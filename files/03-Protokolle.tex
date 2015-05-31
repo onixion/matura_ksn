@@ -1,1 +1,24 @@
-\chapter{Protokolle}
+\chapter{Protokolle (von wikipedia übernommen und gekürzt)}
+\section{Was sind Protokolle}
+Ein Netzwerkprotokoll ist ein Kommunikationsprotokoll für den Austausch von Daten zwischen Computern bzw. Prozessen, die in einem Rechnernetz miteinander verbunden sind. Die Vereinbarung besteht aus einem Satz von Regeln und Formaten, die das Kommunikationsverhalten der kommunizierenden Instanzen in den Computern bestimmen. Der Austausch von Nachrichten erfordert häufig ein Zusammenspiel verschiedener Protokolle, die unterschiedliche Aufgaben übernehmen (beispielsweise Internetprotokollfamilie). Um die damit verbundene Komplexität beherrschen zu können, werden die einzelnen Protokolle in Schichten organisiert. Im Rahmen einer solchen Architektur gehört jedes Protokoll einer bestimmten Schicht an und ist für die Erledigung der speziellen Aufgaben zuständig (beispielsweise Überprüfen der Daten auf Vollständigkeit – Schicht 2). Protokolle höherer Schichten verwenden Dienste von Protokollen tieferer Schichten (Schicht 3 verlässt sich zum Beispiel darauf, dass die Daten vollständig angekommen sind). Zusammen bilden die so strukturierten Protokolle einen Protokollstapel.
+\section{Aufgaben von Protokollen}
+\begin{itemize}
+\item Ein sicherer und zuverlässiger Verbindungsaufbau zwischen den an der Kommunikation beteiligten Computern (Handshake)
+\item Das verlässliche Zustellen von Paketen
+\item Zustellen der Datenpakete an den/die gewünschten Empfänger
+\item Das Sicherstellen einer fehlerfreien Übertragung (Prüfsumme)
+\item Das Zusammenfügen ankommender Datenpakete in der richtigen Reihenfolge
+\item Das Verhindern des Auslesens durch unbefugte Dritte (durch Verschlüsselung) 
+\item Das Verhindern der Manipulation durch unbefugte Dritte (durch MACs oder elektronische Signaturen)
+\end{itemize}
+\section{Typischer Aufbau von Protokollen}
+Der in einem Protokoll beschriebene Aufbau eines Datenpaketes enthält für den Datenaustausch wichtige Informationen über das Paket wie beispielsweise:
+\begin{itemize}
+\item dessen Absender und Empfänger, damit Nicht-Empfänger das Paket ignorieren
+\item den Typ des Pakets (Beispielsweise Verbindungsaufbau, Verbindungsabbau oder reine Nutzdaten)
+\item die Paketgröße, die der Empfänger zu erwarten hat
+\item bei mehrteiligen Übertragungen die laufende Nummer und Gesamtzahl der Pakete
+\item eine Prüfsumme zum Nachvollziehen einer fehlerfreien Übertragung
+\end{itemize}
+Diese Informationen werden den Nutzdaten als Header vorangestellt oder als Trailer angehängt.\\
+Außerdem werden in manchen Protokollen feste Paketsequenzen für den Verbindungsaufbau und -abbau beschrieben. Diese Maßnahmen verursachen weiteren Datenverkehr (Traffic) auf den Datenleitungen – den sog. Overhead. Dieser Overhead ist unerwünscht, weil er die Kapazität belastet, wird aber aufgrund der wichtigen Aufgaben, die Protokolle leisten, in der Regel in Kauf genommen.\\
