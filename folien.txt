@@ -9,7 +9,8 @@ Schichtenmodelle
 
 Switching
 1.) Allgemein
-2.) VLAN
+2.) Funktionsweise
+3.) VLAN
 
 -----------------------------------------------------------------
 
@@ -99,7 +100,7 @@ Firewalls
 3) Filtertechnologien (Level 3)
 	3.1) ACL
 	3.2) Stateful Inspection
-	3.39 Deep Inspection
+	3.3) Deep Inspection
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
