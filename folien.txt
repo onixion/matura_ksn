@@ -1,4 +1,4 @@
------------------------------------------------------------------
+﻿-----------------------------------------------------------------
 ﻿
 Schichtenmodelle 
 1.) Idee
@@ -21,8 +21,18 @@ TODO
 
 Cloud Computing
 1.) Idee
-2.) Nutzung
-3.) 
+2.) Arten
+	- IaaS
+	- PaaS
+	- SaaS
+3.) Zugrif und Organisation
+	- Public Cloud
+	- Private Cloud
+	- Hybrid Cloud
+	- Community Cloud
+4.) Vor- und Nachteile
+	- Kosten
+	- Sicherheit
 
 -----------------------------------------------------------------
 
