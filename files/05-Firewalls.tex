@@ -3,8 +3,29 @@
 Eine Firewall hat die Aufgabe ein Netzwerk von Schädlichen Paketen aus anderen Netzwerken, vornehmlich dem Internet zu schützen. Dies bewerkstelligt es je nach Art der Filtertechnologie und des Firewall typus.
 \section{Arten von Firewalls}
 \subsection{Personal Firewall}
-Eine Personal Firewall ist auf einem an ein Netz angeschlossenen Computer, einem Host, installiert, um diesen vor Angriffen aus dem Netz zu schützen.
-
-Bei dem Netz kann es sich um das Internet oder um ein lokales Netz eines Unternehmens oder eines Privathaushaltes handeln. Die Personal Firewall soll Zugriffe von außen auf den Rechner kontrollieren und kann diese selektiv verhindern, um ihn vor Angriffen durch Würmer oder Cracker zu schützen.
-
-Eine weitere Aufgabe besteht darin, den Verbindungsaufbau zu Backdoors oder Kommunikation von Spyware zu erkennen und zu verhindern.
+Eine Personal Firewall ist auf einem an ein Netz angeschlossenen Computer, einem Host, installiert, um diesen vor Angriffen aus dem Netz zu schützen. Die Personal Firewall soll Zugriffe von außen auf den Rechner kontrollieren und kann diese selektiv verhindern, um ihn vor Angriffen durch Würmer oder Cracker zu schützen. Eine weitere Aufgabe besteht darin, den Verbindungsaufbau zu Backdoors oder Kommunikation von Spyware zu erkennen und zu verhindern.\\
+\subsubsection{Vorteile}
+Computerwürmer, die einen Sicherheitsfehler in einem Netzwerkdienst ausnutzen, um sich zu verbreiten, können den Computer nur dann infizieren, wenn der entsprechende Netzwerkdienst für den Wurm erreichbar ist. Hier kann eine Personal Firewall den Fernzugriff auf den Netzwerkdienst einschränken und somit eine Infektion erschweren oder sogar verhindern. Gleiches gilt für einen Netzwerkzugriff eines möglichen Eindringlings.\\
+Darüber hinaus können die Regeln der Personal Firewall im günstigsten Fall unterbinden, dass ein heimlich reaktivierter oder installierter Dienst ungehindert vom Netzwerk aus ansprechbar ist.
+\subsubsection{Nachteile}
+Programme, die auf derselben Hardware wie die Firewall-Software laufen, haben wesentlich mehr Möglichkeiten, diese zu manipulieren und zu umgehen, als bei einer externen Firewall. Ein Absturz oder gar eine dauerhafte Deaktivierung der Firewall-Software durch einen Softwarefehler oder ein Schadprogramm führt dazu, dass ein uneingeschränkter Zugriff auf die zuvor gefilterten Netzwerkdienste möglich wird, ohne dass der Anwender dies bemerkt. Abhängig vom Produkt und Wissensstand des Anwenders kann auch eine Fehlbedienung diesen Zustand herbeiführen.\\
+Es ist zudem ein Problem des Konzepts, dass sich die Firewall-Software zwischen die normale Netzwerkimplementierung des Betriebssystems und die Außenwelt stellt, wodurch zwar in großen Teilen nicht mehr die ursprüngliche Netzwerkimplementierung, dafür aber die wesentlich komplexere Firewall-Software direkt angreifbar wird. Die Erfahrung zeigt, dass eine Software mehr Fehler und Angriffspunkte enthält, je komplexer sie ist. Da ihre Komponenten (zumindest teilweise) mit erweiterten Rechten laufen und in der Regel Kernel-Komponenten installiert werden, wirken sich Programmier- und Designfehler hier besonders verheerend auf die Sicherheit, Performance und Stabilität des Computersystems aus. Auf diese Weise können Angriffs- und Spionagemöglichkeiten geschaffen werden, die es ohne die installierte Firewall-Software nicht gäbe. So können Personal Firewalls selbst Sicherheitslücken enthalten, die beispielsweise einem Computerwurm erst Ansätze für einen Fernzugriff bieten.\\
+\subsection{External Firewall}
+Eine externe Firewall (auch Netzwerk- oder Hardware-Firewall genannt) beschränkt die Verbindung zwischen zwei Netzen. Das könnten beispielsweise ein Heimnetzwerk und das Internet sein.
+Häufig werden External Firewalls auch als Hardware Firewalls bezeichnet. Dieser Umgangssprachliche Ausdruck ist jedoch nicht ganz korrekt, da jede Firewall im Grunde eine Software komponente ist. Hardware Firewalls haben zusätzlich noch ein mehr oder weniger spezialisiertes Gerät.
+\subsubsection{Vorteile}
+In all den Punkten, in denen sich die Funktionalitäten einer externen Firewall mit denen einer Personal Firewall gleichen, ist die externe Firewall zuverlässiger. Denn ein derart spezialisiertes Gerät bietet vorwiegend ein sicherheitsoptimiertes und netzwerkseitig stabiles System, das dank der physischen Trennung zu dem zu schützenden Computersystem nicht so einfach manipuliert werden kann. Die externe Firewall ist dafür prädestiniert, unerlaubte Zugriffe von außen auf das interne System zu unterbinden.\\
+Ab einer gewissen Netzgröße ist es billiger eine External Firewall zu kaufen als für jeden PC eine Lizenz für eine kommerzielle Firewalllösung zu erstehen.
+\subsection{Nachteile}
+Betreibt der eigene Computer an der Internetschnittstelle keine Netzwerkdienste und wird auch sonst entsprechend fachmännisch betrieben, so ist der Einsatz einer externen Firewall fragwürdig, denn die Firewall muss für ihre Arbeit die Netzwerkpakete ggf. separat analysieren. Sie kann die Netzwerkkommunikation also abhängig von ihrer eigenen Hardware-Geschwindigkeit, der Auslastung und dem jeweiligen Algorithmus mehr oder weniger stark verzögern. Allerdings verursachen moderne Geräte innerhalb normaler Parameter üblicherweise Verzögerungen unterhalb der Wahrnehmungsschwelle.
+\section{Filtertechnologien}
+\begin{itemize}
+\item \textbf{Packet Filters}\\
+Packet Filters sind die primitivste Art von Firewalls. Sie entscheiden anhand der \textbf{Source- und Destination IP, Source- und Destination Port sowie UDP/TCP Parameter}, ob ein Paket als vertrauenswürdig eingestuft wird oder nicht.
+\item \textbf{Stateful Inspection}\\
+Dies stellt eine Erweiterung zu dem Packet Filter dar. Die Firewall speichert nun auch den \textbf{State}, also den Zustand eines Paketes oder einer Kommunikation. So kann man der Firewall zum Beispiel sagen, dass Pakete, welche zu einer bestehenden Kommunikation gehören, durchgelassen werden dürfen. 
+\item \textbf{Application Level Firewall}\\
+Der Vorteil dieser Art an Firewall ist, dass sie in der Lage ist, bestimmte Protokolle und Anwendungen zu \glqq verstehen\grqq . Das bietet den Vorteil, dass sie erkennen kann, ob ein ungewolltes Protokoll über einen offenen Port kommt.
+\item \textbf{Deep Inspection}\\
+Während Stateful Inspection sich nur den Header des Paketes ansieht, greift die Deep Inspection in die \textbf{Payload}, also die Nutzdaten, ein, um genaue Informationen über den Inhalt zu erlangen. Dies geht sogar soweit, dass die Firewalls Verschlüsselungen versuchen aufzubrechen.\\
+Vorteilhaft daran ist die relativ hohe Sicherheit, da auch Pakete, welche auf einem scheinbar harmlosen Port kommen und auch das passende Protokoll haben, manipuliert sein können. Nachteilig jedoch, dass die Firewall damit in der Lage ist, absolut alles an Informationen über den Netzwerkverkehr aufsammeln zu können, was sie will. Die Anonymität ist damit nicht länger gewährleistet.
