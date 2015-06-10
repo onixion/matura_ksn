@@ -1,15 +1,21 @@
-\chapter{Layer 2 Security}
-\section{Man in the Middle Attack}
-\subsection{Tier1}
-Man in the Middle ist eine Praxis in welcher der Angreifer versucht sich, wie der Name bereits aussagt, zwischen den Clienten und seinem Gesprächspartner zu stellen. Sein Ziel dabei ist es, Das Gespräch mitzuhören um an wichtige Informationen zu kommen.
-\subsection{Tier2}
-Das durch den Namen hervorgerufene Bild von einem Mann der zwischen zwei Personen steht, ist natürlich nur ein Vergleich. In der Realität steht der Angreifer logisch zwischen dem Clienten und dem Server, was bedeutet, dass die Pakete nicht wie gewohnt und gewollt von PC zu Switch/Hub zu Router und so weiter bis zum Server fließen, sondern, dass sie irgendwo auf ihrem Weg vom RRechten Pfad abkommen und am PC des Bösewichtes landen.
-\subsection{Tier3}
-Möglichkeiten hierfür sind zum Beispiel das Vorspielen man sei ein DHCP Server. Wenn man es schafft schneller zu sein als der eigentliche DHCP Server, der unter Umständen sogar noch über ein Relay ganz wo anders liegt, und dadurch dem Opfer Rechner einen falschen Default Gateway gibt, wie zB die IP-Adresse des Angreifers, landet der Traffic welcher eigentlich ins Internet soll natürlich auf bei diesem Rechner. 
+\chapter{Netzsicherheit (wiki copy'n'paste)}
+\section{Was ist Netzsicherheit}
+Netzwerksicherheit (auch Netzsicherheit) ist kein einzelner feststehender Begriff, sondern umfasst alle Maßnahmen zur Planung, Ausführung und Überwachung der Sicherheit in Netzwerken. Diese Maßnahmen sind keinesfalls nur technischer Natur, sondern beziehen sich auch auf die Organisation (z. B. Richtlinien, in denen geregelt wird, was die Betreiber des Netzwerkes dürfen sollen), den Betrieb (Wie kann ich Sicherheit im Netzwerk in der Praxis anwenden, ohne gleichzeitig den Ablauf des Betriebs zu stören?) und schließlich auch auf das Recht (Welche Maßnahmen dürfen eingesetzt werden?).
+\section{Aspekte der Netzwerksicherheit}
+\subsection{Informationssicherheit}
+Als Informationssicherheit bezeichnet man Eigenschaften von informationsverarbeitenden und -lagernden (technischen oder nicht-technischen) Systemen, die die Schutzziele Vertraulichkeit, Verfügbarkeit und Integrität sicherstellen. Informationssicherheit dient dem Schutz vor Gefahren bzw. Bedrohungen, der Vermeidung von wirtschaftlichen Schäden und der Minimierung von Risiken.\\
 
-\section{Denial of Service}
-\subsection{Tier1}
-Denial of Service oder abgekürzt DOS, ist englisch für \glqq Verhindern eines Services\grqq und beinhaltet jegliche Methoden die es dem Angreifer ermöglichen den Anbieter eines Dienstes an diesem zu hindern.
-\subsection{Tier2}
-Obwohl der Begriff theoretisch alles umfasst, wird er Umgangssprachlich hauptsächlich dafür verwendet, wenn ein Client einen Dienst absichtlich und mit bösartiger Absicht so sehr in Anspruch nimmt, dass dieser keine anderen Anfragen mehr beantworten kann bzw. zu lange zum beantworten braucht. 
-\subsection{Tier3}
+Information (oder Daten) sind schützenswerte Güter. Der Zugriff auf diese sollte beschränkt und kontrolliert sein. Nur autorisierte Benutzer oder Programme dürfen auf die Information zugreifen. Schutzziele werden zum Erreichen bzw. Einhalten der Informationssicherheit und damit zum Schutz der Daten vor beabsichtigten Angriffen von IT-Systemen definiert:
+
+\begin{itemize}
+\item Vertraulichkeit (englisch: confidentiality): Daten dürfen lediglich von autorisierten Benutzern gelesen bzw. modifiziert werden, dies gilt sowohl beim Zugriff auf gespeicherte Daten, wie auch während der Datenübertragung.
+\item Integrität (englisch: integrity): Daten dürfen nicht unbemerkt verändert werden. Alle Änderungen müssen nachvollziehbar sein.
+\item Verfügbarkeit (englisch: availability): Verhinderung von Systemausfällen; der Zugriff auf Daten muss innerhalb eines vereinbarten Zeitrahmens gewährleistet sein.
+\item Authentizität (englisch: authenticity) bezeichnet die Eigenschaften der Echtheit, Überprüfbarkeit und Vertrauenswürdigkeit eines Objekts.
+\item Verbindlichkeit/Nichtabstreitbarkeit (englisch: non repudiation): Sie erfordert, dass kein unzulässiges Abstreiten durchgeführter Handlungen möglich ist. Sie ist unter anderem wichtig beim elektronischen Abschluss von Verträgen. Erreichbar ist sie beispielsweise durch elektronische Signaturen.
+\item Zurechenbarkeit (englisch: accountability): Eine durchgeführte Handlung kann einem Kommunikationspartner eindeutig zugeordnet werden.
+\item Anonymität
+\end{itemize}
+
+\subsection{AAA}
+Die drei A's des Trible A Systems stehen für Authentication, Authorization und Accounting. 
