@@ -30,3 +30,11 @@ Der Vorteil dieser Art an Firewall ist, dass sie in der Lage ist, bestimmte Prot
 Während Stateful Inspection sich nur den Header des Paketes ansieht, greift die Deep Inspection in die \textbf{Payload}, also die Nutzdaten, ein, um genaue Informationen über den Inhalt zu erlangen. Dies geht sogar soweit, dass die Firewalls Verschlüsselungen versuchen aufzubrechen.\\
 Vorteilhaft daran ist die relativ hohe Sicherheit, da auch Pakete, welche auf einem scheinbar harmlosen Port kommen und auch das passende Protokoll haben, manipuliert sein können. Nachteilig jedoch, dass die Firewall damit in der Lage ist, absolut alles an Informationen über den Netzwerkverkehr aufsammeln zu können, was sie will. Die Anonymität ist damit nicht länger gewährleistet.
 \end{itemize}
+\section{DMZ}
+DMZ steht für Demilitarisierte Zone und beschreibt einen Aspekt der Netzwerksicherheit in welcher ein Segement eines Netzwerkes zwischen zwei Firewalls gelegt wird. Dieses Netzwerksegment ist dann sowohl von außen (dem Internet) als auch von innen (dem LAN) erreichbar. 
+
+Im Sicherheitshandbuch wird zu einem zweistufigen Firewall konzept geraten. In diesem Fall trennt eine Firewall das Internet von der DMZ und eine weitere Firewall die DMZ vom internen Netz. Dadurch kompromittiert eine einzelne Schwachstelle noch nicht gleich das interne Netz. Im Idealfall sind die beiden Firewalls von verschiedenen Herstellern, da ansonsten eine bekannte Schwachstelle ausreichen würde, um beide Firewalls zu überwinden.\\
+
+Die Filterfunktionen können aber durchaus von einem einzelnen Gerät übernommen werden; in diesem Fall benötigt das filternde System mindestens drei Netzanschlüsse: je einen für die beiden zu verbindenden Netzsegmente (z. B. WAN und LAN) und einen dritten für die DMZ (siehe auch Dual homed host).\\
+
+Auch wenn die Firewall das interne Netz vor Angriffen eines kompromittierten Servers aus der DMZ schützt, sind die anderen Server in der DMZ direkt angreifbar, solange nicht noch weitere Schutzmaßnahmen getroffen werden. Dies könnte z. B. eine Segmentierung in VLANs sein oder Software Firewalls auf den einzelnen Servern, die alle Pakete aus dem DMZ-Netz verwerfen.
