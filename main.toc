@@ -1,0 +1,92 @@
+\select@language {german}
+\contentsline {chapter}{\numberline {1}Schichtenmodelle}{3}
+\contentsline {subsubsection}{OSI}{3}
+\contentsline {paragraph}{Layer 1 - Physical Layer}{3}
+\contentsline {paragraph}{Layer 2 - Data Link Layer}{3}
+\contentsline {paragraph}{Layer 3 - Network Layer}{4}
+\contentsline {paragraph}{Layer 4 - Transport Layer}{4}
+\contentsline {paragraph}{Layer 5 - Session Layer}{4}
+\contentsline {paragraph}{Layer 6 - Presentation Layer}{5}
+\contentsline {paragraph}{Layer 7 - Application Layer}{5}
+\contentsline {subsubsection}{TCP/IP}{5}
+\contentsline {paragraph}{Layer 1 - Link Layer}{5}
+\contentsline {paragraph}{Layer 2 - Internet Layer}{5}
+\contentsline {paragraph}{Layer 3 - Transport Layer}{5}
+\contentsline {paragraph}{Layer 4 - Application Layer}{6}
+\contentsline {chapter}{\numberline {2}Switching}{7}
+\contentsline {section}{\numberline {2.1}Allgemein}{7}
+\contentsline {section}{\numberline {2.2}Funktionsweise}{7}
+\contentsline {subsection}{\numberline {2.2.1}Source Address Table}{7}
+\contentsline {subsection}{\numberline {2.2.2}Arbeitsweisen}{8}
+\contentsline {subsection}{\numberline {2.2.3}Port-Switching, Segment-Switching}{9}
+\contentsline {section}{\numberline {2.3}VLAN}{9}
+\contentsline {subsection}{\numberline {2.3.1}Gr\IeC {\"u}nde und Vorteile}{9}
+\contentsline {section}{\numberline {2.4}M\IeC {\"o}gliche Bilder}{10}
+\contentsline {chapter}{\numberline {3}Routing}{11}
+\contentsline {section}{\numberline {3.1}Allgemeines}{11}
+\contentsline {chapter}{\numberline {4}Protokolle}{13}
+\contentsline {section}{\numberline {4.1}Was sind Protokolle}{13}
+\contentsline {section}{\numberline {4.2}Aufgaben von Protokollen}{13}
+\contentsline {section}{\numberline {4.3}Typischer Aufbau von Protokollen}{13}
+\contentsline {section}{\numberline {4.4}Spezifische Protokolle(kopiert aus diplomarbeit)}{14}
+\contentsline {subsection}{\numberline {4.4.1}Ethernet}{14}
+\contentsline {subsection}{\numberline {4.4.2}Address Resolution Protocol - ARP}{16}
+\contentsline {subsection}{\numberline {4.4.3}Internet Protocol - IP}{17}
+\contentsline {subsubsection}{IPv4}{17}
+\contentsline {subsubsection}{IPv6}{19}
+\contentsline {subsection}{\numberline {4.4.4}Internet Control Message Protocol - ICMP}{20}
+\contentsline {paragraph}{Echo Request/Response - Ping}{20}
+\contentsline {subsection}{\numberline {4.4.5}File Transport Protocol - FTP}{20}
+\contentsline {subsection}{\numberline {4.4.6}Simple Network Managing Protocol - SNMP}{21}
+\contentsline {subsection}{\numberline {4.4.7}Hypertext Transfer Protocol - HTTP}{22}
+\contentsline {chapter}{\numberline {5}Netzsicherheit}{24}
+\contentsline {section}{\numberline {5.1}Was ist Netzsicherheit}{24}
+\contentsline {section}{\numberline {5.2}Aspekte der Netzwerksicherheit}{24}
+\contentsline {subsection}{\numberline {5.2.1}Informationssicherheit}{24}
+\contentsline {section}{\numberline {5.3}Spezifische Beispiele f\IeC {\"u}r Gefahren}{25}
+\contentsline {subsection}{\numberline {5.3.1}DOS}{25}
+\contentsline {subsection}{\numberline {5.3.2}Man-in-the-Middle}{25}
+\contentsline {subsection}{\numberline {5.3.3}Malware}{25}
+\contentsline {chapter}{\numberline {6}Firewalls}{27}
+\contentsline {section}{\numberline {6.1}Sinn und Aufgaben von Firewalls}{27}
+\contentsline {section}{\numberline {6.2}Arten von Firewalls}{27}
+\contentsline {subsection}{\numberline {6.2.1}Personal Firewall}{27}
+\contentsline {subsubsection}{Vorteile}{27}
+\contentsline {subsubsection}{Nachteile}{27}
+\contentsline {subsection}{\numberline {6.2.2}External Firewall}{28}
+\contentsline {subsubsection}{Vorteile}{28}
+\contentsline {subsection}{\numberline {6.2.3}Nachteile}{28}
+\contentsline {section}{\numberline {6.3}Filtertechnologien}{28}
+\contentsline {section}{\numberline {6.4}DMZ}{29}
+\contentsline {chapter}{\numberline {7}Verschl\IeC {\"u}sselung}{30}
+\contentsline {section}{\numberline {7.1}Grundbegriff der Verschl\IeC {\"u}sselung}{30}
+\contentsline {section}{\numberline {7.2}Informationssicherheit}{30}
+\contentsline {section}{\numberline {7.3}Arten der Verschl\IeC {\"u}sselung}{30}
+\contentsline {section}{\numberline {7.4}Nennenswerte Verschl\IeC {\"u}sselungsverfahren}{31}
+\contentsline {subsection}{\numberline {7.4.1}Symmetrische Verschl\IeC {\"u}sselungsverfahren}{31}
+\contentsline {subsubsection}{DES}{31}
+\contentsline {subsubsection}{3DES / Triple DES}{31}
+\contentsline {subsubsection}{AES}{31}
+\contentsline {subsubsection}{SEAL}{31}
+\contentsline {subsection}{\numberline {7.4.2}Asymmetrische Verschl\IeC {\"u}sselungsverfahren}{31}
+\contentsline {subsubsection}{RSA}{31}
+\contentsline {subsection}{\numberline {7.4.3}Hybride Verschl\IeC {\"u}sselungsverfahren}{32}
+\contentsline {subsubsection}{TLS}{32}
+\contentsline {subsection}{\numberline {7.4.4}IPsec}{32}
+\contentsline {chapter}{\numberline {8}Zertifikate}{33}
+\contentsline {section}{\numberline {8.1}Allgemeines}{33}
+\contentsline {section}{\numberline {8.2}Public-Key-Infrastruktur}{33}
+\contentsline {subsection}{\numberline {8.2.1}Bestandteile}{33}
+\contentsline {subsubsection}{Modelle}{33}
+\contentsline {subsubsection}{Problem}{34}
+\contentsline {chapter}{\numberline {9}VPN}{35}
+\contentsline {section}{\numberline {9.1}Arten von VPN-Verbindungen}{35}
+\contentsline {section}{\numberline {9.2}Verschl\IeC {\"u}sselung}{35}
+\contentsline {section}{\numberline {9.3}Anwendungsm\IeC {\"o}glichkeiten}{35}
+\contentsline {chapter}{\numberline {10}Cloud}{37}
+\contentsline {section}{\numberline {10.1}Allgemein}{37}
+\contentsline {section}{\numberline {10.2}Arten von Clouds}{37}
+\contentsline {section}{\numberline {10.3}Zugriff}{38}
+\contentsline {subsection}{\numberline {10.3.1}Arten}{38}
+\contentsline {section}{\numberline {10.4}Vor- und Nachteile}{38}
+\contentsline {section}{\numberline {10.5}M\IeC {\"o}gliche Bilder}{39}
