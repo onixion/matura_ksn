@@ -1,4 +1,4 @@
-﻿	1.) Thema: Was haben Sie getan?
+	1.) Thema: Was haben Sie getan?
 		-> Stufenaufbau
 		-> Folie ausarbeiten
 		-> Thema und Dibplomarbeit
@@ -13,7 +13,8 @@ WICHTIG:
 
 	Nicht ablesen von Notizen!
 	Auditorium ansehen!
-____________________________________________
+
+___________________________________________
 
 -Schichtenmodelle (Mani)
    -OSI Übersicht
