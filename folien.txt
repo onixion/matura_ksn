@@ -110,10 +110,9 @@ Netzwerksicherheit   <-- i hab is layer 2 weckglassen damit i auf mehr content k
 1) Was ist Netzwerksicherheit? (Level 1) 
 
 2) Aspekte der Netzwerksicherheit (Level 2)
-	2.1) Informationssicherheit 
-	2.2) AAA
+	2.1) Informationssicherheit
 	
-3) Spezifische Beispiele für Gefahren und Lösungen
+3) Spezifische Beispiele für Gefahren
 	3.1) DOS
 	3.2) Man-In-The-Middle
 	3.3) Viren, Würmer, Trojaner
