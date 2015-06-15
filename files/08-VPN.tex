@@ -1,6 +1,6 @@
 \chapter{VPN}
 
-VPN steht für \textbf{Virtual Private Network} und ist eine Schnittstelle zu einem privaten Netzwerk. Dabei werden die Pakete verschlüsselt, in VPN-Pakete gekapselt und an dem VPN-Server gesendet. Der VPN-Server entkapselt diese Pakete, entschlüsselt sie und spuckt sie als "normale" Pakete auf der anderen Seite wieder raus (das wird mit \textbf{tunneling} bezeichnet). Damit kann man sich über ein unsicheres Netzwerk (z.B. das Internet) in ein privates Netzwerk sicher einklinken. Die Pakete werden schon auf dem lokalen Computer verschlüsselt, d.h. keiner, außer ab den VPN-Server, können die Paket im Klartex lesen.
+VPN steht für \textbf{Virtual Private Network} und ist eine Schnittstelle zu einem privaten Netzwerk. Dabei werden die Pakete verschlüsselt, in VPN-Pakete gekapselt und an dem VPN-Server gesendet. Der VPN-Server entkapselt diese Pakete, entschlüsselt sie und spuckt sie als "normale" Pakete auf der anderen Seite wieder raus (das wird als '\textbf{tunneling}' bezeichnet). Damit kann man sich über ein unsicheres Netzwerk (z.B. das Internet) in ein privates Netzwerk sicher einklinken. Die Pakete werden schon auf dem lokalen Computer verschlüsselt, d.h. keiner, außer ab den VPN-Server, können die Paket im Klartext lesen.
 
 \section{Arten von VPN-Verbindungen}
 
@@ -8,4 +8,20 @@ VPN steht für \textbf{Virtual Private Network} und ist eine Schnittstelle zu ei
 \item \textbf{Host-to-Host}: Dies kennzeichnet eine sichere Verbindung zweier Computer, z.B. über das Internet
 \item \textbf{Host-to-Net}: wird auch als \textbf{Dial-Up Service} bezeichnet. Der Client verbindet sich und hängt sich in ein privates Netzwerk ein, als ob er sich physikalisch in das Netz eingehängt hätte, er bekommt eine private Adresse zugewiesen
 \item \textbf{Net-to-Net}: wird auch \textbf{LAN-Interconnect} bezeichnet, wird verwendet um zwei private Netzwerke transparent zu verbinden (z.B. die Zentral mit einem Außenstandort der Firma)
+\end{itemize}
+
+\section{Verschlüsselung}
+
+Abhängig vom verwendeten VPN-Protokoll lassen sich die Netzwerkpakete meist verschlüsseln. Da die Verbindung dadurch abhör- und manipulationssicher wird, kann eine Verbindung zum VPN-Partner durch ein unsicheres Netz hindurch aufgebaut werden, ohne dabei ein erhöhtes Sicherheitsrisiko einzugehen. Alternativ dazu lassen sich über VPN auch ungesicherte Klartextverbindungen aufbauen.\\\\
+Allerdings lässt sich auch an den verschlüsselten Paketen noch erkennen, welche VPN-Gegenstellen an der Kommunikation beteiligt sind; die Zahl und Größe der Datenpakete lässt u.U. Rückschlüsse auf die Art der Daten zu. Daher ist diesbezüglich ein mitunter verwendetes Gleichnis mit einem nicht einsehbaren Tunnel irreführend; ein Vergleich mit einer Milchglasröhre ist treffender.\\\
+SSL-VPNs nutzen das gesicherte SSL/TLS-Protokoll für die Übertragung von Daten. Bei Site-to-Site-Lösungen wird statt SSL/TLS sehr oft IPSec verwendet.
+
+\section{Anwendungsmöglichkeiten}
+
+\begin{itemize}
+\item Über VPN können verschieden interne Netze von verschiedenen Geschäftsstellen über das Internet (als Beispiel) verbunden werden. Der große Vorteil ist, dass man nicht neue Kabel legen muss, sondern über ein bestehendes Netz virtuelle Kabel legen kann.
+\item Ein Mitarbeiter kann sich von Zuhause aus, in das Firmennetzwerk einklinken. Als ob der Mitarbeiter seinen Computer an das Firmennetzwerk angesteckt hat.
+\item Es ist auch möglich, dass sich der Rechner des Mitarbeiters per VPN nicht in ein entferntes physisches Firmennetz hängt, sondern direkt an einen Server bindet. VPN dient hier dem gesicherten Zugriff auf den Server. Diese Verbindungsart wird Ende-zu-Ende (englisch 'end-to-end') genannt.
+\item Es besteht auch die Möglichkeit, dass sich zwei Server über VPN miteinander unterhalten können, ohne dass die Kommunikation durch Dritte eingesehen werden kann (das entspricht einer Ende-zu-Ende-Verbindung, welche für einen solchen Fall mitunter auch Host-to-Host genannt wird).
+\item Ähnlich wie bei der Einwahl von zu Hause in ein Firmennetz können sich auch beliebige Clients aus dem Firmennetz in ein separates, speziell gesichertes Netz innerhalb der Firma per VPN einwählen: ein privates (datentechnisch abgekapseltes) Netz innerhalb des Firmennetzes also, bei dem die Clients bis zum VPN-Gateway dieselbe physikalische Leitung verwenden, wie alle anderen Clients des Netzes auch – mit dem Unterschied, dass sämtliche VPN-Netzpakete bis zum Gateway verschlüsselt übertragen werden können.
 \end{itemize}

@@ -52,11 +52,11 @@ Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (m
 \item wird heute aufgrund der Schlüssellänge für viele Anwendungen als nicht ausreichend sicher erachtet
 \end{itemize}
 
-\subsubsection{TribleDES}
+\subsubsection{3DES / Triple DES}
 
 \begin{itemize}
 \item durch die dreifache Anwendung des DES, wird die Schlüssellänge erhöht
-\item obwohl dieser Standard von AES abgelöst wurde, findet dieser Standard noch verwendung (z.B. Banken Chipkartenanwendungen)
+\item obwohl dieser Standard von AES abgelöst wurde, findet dieser Standard noch Verwendung (z.B. Banken Chipkartenanwendungen)
 \end{itemize}
 
 \subsubsection{AES}
@@ -73,7 +73,7 @@ Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (m
 
 \begin{itemize}
 \item SEAL steht für \textbf{Software-Optimized Encryption Algorithm}
-\item ist ein Stromcipher (stream cipher), verschlüsselt als zeichenweise
+\item ist ein Stromcipher (stream cipher), verschlüsselt Zeichenweise
 \end{itemize}
 
 \subsection{Asymmetrische Verschlüsselungsverfahren}
@@ -96,3 +96,7 @@ Grundsätzlich unterteilt man die Verschlüsselungen in zwei Große Bereiche: (m
 \item TLS unterstützt verschiedene Verschlüsselungsmethoden: RSA, AES oder Camellia-Verschlüsselung
 \item arbeitet mit Zertifikaten
 \end{itemize}
+
+\subsection{IPsec}
+
+IPsec ist eine Ansammlung an verschiedenen Protokollen und Verschlüsselungssystemen, die modular verwendet werden können. IPsec kapselt und verschlüsselt IP-Pakete, damit die Pakete nicht von Netzwerkgeräten umgeleitet, gelesen oder geändert werden können. Zudem ist es für ein Netzwerkgerät dazwischen unmöglich zu ermitteln, wer das Paket verschickt hat bzw. wer das Paket empfängt.
