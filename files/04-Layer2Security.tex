@@ -17,5 +17,29 @@ Information (oder Daten) sind schützenswerte Güter. Der Zugriff auf diese soll
 \item Anonymität
 \end{itemize}
 
-\subsection{AAA}
-Die drei A's des Trible A Systems stehen für Authentication, Authorization und Accounting. 
+\section{Spezifische Beispiele für Gefahren}
+\subsection{DOS}
+DOS steht für Denial of Service und steht für das Absichtliche Überlasten einer Netzwerkinfrastruktur um einen Dienst nicht mehr verfügbar zu machen.\\
+DoS-Angriffe wie SYN-Flooding oder der Smurf-Angriff belasten den Internetzugang, das Betriebssystem oder die Dienste eines Hosts, beispielsweise HTTP, mit einer größeren Anzahl Anfragen, als diese verarbeiten können, woraufhin reguläre Anfragen nicht oder nur sehr langsam beantwortet werden. Wenn möglich, ist es jedoch wesentlich effizienter, Programmfehler auszunutzen, um eine Fehlerfunktion (wie einen Absturz) der Serversoftware auszulösen, worauf diese auf Anfragen ebenfalls nicht mehr reagiert. Beispiele sind WinNuke, die Land-Attacke, die Teardrop-Attacke oder der Ping of Death.\\
+\subsection{Man-in-the-Middle}
+Ein Man-in-the-Middle-Angriff (MITM-Angriff), auch Mittelsmannangriff oder Janusangriff (nach dem doppelgesichtigen Janus der römischen Mythologie) genannt, ist eine Angriffsform, die in Rechnernetzen ihre Anwendung findet. Der Angreifer steht dabei entweder physikalisch oder – heute meist – logisch zwischen den beiden Kommunikationspartnern, hat dabei mit seinem System vollständige Kontrolle über den Datenverkehr zwischen zwei oder mehreren Netzwerkteilnehmern und kann die Informationen nach Belieben einsehen und sogar manipulieren. Die Janusköpfigkeit des Angreifers besteht darin, dass er den Kommunikationspartnern vortäuscht, das jeweilige Gegenüber zu sein.\\
+
+Am effektivsten lässt sich diese Angriffsform mit einer Verschlüsselung der Datenpakete entgegenwirken, wobei allerdings die „Fingerabdrücke“ („fingerprints“) der Schlüssel über ein zuverlässiges Medium verifiziert werden müssen. Das bedeutet, es muss eine gegenseitige Authentifizierung stattfinden; die beiden Kommunikationspartner müssen auf anderem Wege ihre digitalen Zertifikate oder einen gemeinsamen Schlüssel ausgetauscht haben, d. h. sie müssen sich kennen. Sonst kann z. B. ein Angreifer bei einer ersten SSL- oder SSH-Verbindung beiden Opfern falsche Schlüssel vortäuschen und somit auch den verschlüsselten Datenverkehr mitlesen.\\
+\subsection{Malware}
+Als Malware, oder Malicious Software, wird jegliches Programm bezeichnet, welches in seiner Funktion auf die Schädigung des Auführenden zielt. Malware ist ein Überbegriff und umfasst eine Großzahl an Untergruppen wie Vieren, Würmer, Trojaner, Spyware, Backdoors, uvm.\\
+
+\begin{itemize}
+\item Vieren\\
+sind ein sich selbst verbreitendes Computerprogramm, welches sich in andere Computerprogramme einschleust und sich damit reproduziert. Die Klassifizierung als Virus bezieht sich hierbei auf die Verbreitungs- und Infektionsfunktion.\\
+
+Einmal gestartet, kann es vom Anwender nicht kontrollierbare Veränderungen am Status der Hardware, am Betriebssystem oder an weiterer Software vornehmen (Schadfunktion). 
+\item Würmer\\
+Ein Computerwurm (im Computerkontext kurz Wurm) ist ein Schadprogramm (Computerprogramm oder Skript) mit der Eigenschaft, sich selbst zu vervielfältigen, nachdem es einmal ausgeführt wurde. In Abgrenzung zum Computervirus verbreitet sich der Wurm, ohne fremde Dateien oder Bootsektoren mit seinem Code zu infizieren.\\
+
+Würmer verbreiten sich über Netzwerke oder über Wechselmedien[4] wie USB-Sticks. Dafür benötigen sie gewöhnlich (aber nicht zwingend) ein Hilfsprogramm wie einen Netzwerkdienst oder eine Anwendungssoftware als Schnittstelle zum Netz; für Wechselmedien benötigen sie meist einen Dienst, der nach dem Anschluss des belasteten Mediums den automatischen Start des Wurms ermöglicht (wie Autorun, mitunter auch den aktiven Desktop von Windows).
+
+\item Trojaner\\
+Als Trojanisches Pferd (englisch Trojan Horse), im EDV-Jargon auch kurz Trojaner genannt, bezeichnet man ein Computerprogramm, das als nützliche Anwendung getarnt ist, im Hintergrund aber ohne Wissen des Anwenders eine andere Funktion erfüllt.
+
+Der Begriff wird umgangssprachlich häufig synonym zu Computerviren sowie als Oberbegriff für Backdoors und Rootkits verwendet, ist davon aber klar abzugrenzen.
+\end{itemize}

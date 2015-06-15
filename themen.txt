@@ -1,12 +1,20 @@
-﻿
 	1.) Thema: Was haben Sie getan?
 		-> Stufenaufbau
 		-> Folie ausarbeiten
+		-> Thema und Dibplomarbeit
+		-> Schlüsselwörter
+		-> Was haben wir gemacht? Mein Beitrag?
 
 	2.) Umfeldfrage: KSN
 		-> Stufenaufbau
 		-> Folie ausarbeiten
-____________________________________________
+
+WICHTIG:
+
+	Nicht ablesen von Notizen!
+	Auditorium ansehen!
+
+___________________________________________
 
 -Schichtenmodelle (Mani)
    -OSI Übersicht
@@ -62,15 +70,19 @@ ____________________________________________
    -Grundidee, Überblick
    -Root Certificate Authoritys/Hierarchischer Aufbau
    -Probleme
+   -Wo liegen die Probleme?
+   -Authenzität beweisen? 
 
 -VPN (Alin)
    -Grundidee
    -Arten
    -Tunnel
    -Anwendungsgebiete
+   -Schlüssel
 
 -Cloud Computing(Mani)
    -Grundidee
    -Arten
    -Zukunft 
    -Probleme/Risiken
+
