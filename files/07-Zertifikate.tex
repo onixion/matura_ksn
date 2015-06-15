@@ -1,4 +1,34 @@
 \chapter{Zertifikate}
 
-Digitale Zertifikate ist ein digitaler Datensatz (=Datenformat), der durch kryptographische Verfahren Authenzität und Integrität bietet. Diese Zeritikate beinhalten kryptographisch geschütze Informationen über die Echtheit von Objekten, Personen, Schlüssel usw.\\
-Ein weit verbreitetes Zertifikatstandard ist der X.509-Standard, der heute z.B. für HTTPS verwendet wird. Dieses X.509-Zertifikat hat die Eigenschaft die Indentität des Inhabers und andere Informationen (Öffentlicher Schlüssel, Ablaufdatum des Zertifikates, ...) zu bestätigen. Der X.509-Standard unterscheidet die gewöhnlichen Zertifikate von den Root-Zertifikaten. Root-Zertifikate sind in der Lage, andere Root-Zertifikate oder gewöhnliche zu unterschreiben. Nun muss der Client nur das Root-Zertifikat vertrauen und vertraut automatisch jedes Zertifikat, dass von ihr unterschrieben worden ist. Die Idee ist, dass man am Gerät nur ein Zertikat draufspielt und die Zertifizierungsstelle (Inhaber dieses Zertifikates) Inhaber von anderen Seiten zertifizieren können.
+\section{Allgemeines}
+
+Ein Digitales Zertifikat ist ein digitaler Datensatz, der durch kryptographische Verfahren Authentizität und Integrität bietet. Diese Zertifikate beinhalten kryptographisch geschützte Informationen über die Echtheit von Objekten, Personen, Schlüssel usw.\\
+Ein weit verbreitetes Zertifikatstandard ist der X.509-Standard, der heute z.B. für HTTPS verwendet wird. Dieses X.509-Zertifikat hat die Eigenschaft die Identität des Inhabers und andere Informationen (Öffentlicher Schlüssel, Ablaufdatum des Zertifikates, Land, Inhaber, verwendete Algorithmus, ...) zu bestätigen. 
+
+\section{Public-Key-Infrastruktur}
+
+Mit Public-Key-Infrastruktur (PKI) bezeichnet man in der Kryptologie ein System, das digitale Zertifikate ausstellt, verteilen und prüfen kann. Die innerhalb einer PKI ausgestellten Zertifikate werden zur Absicherung rechnergestützter Kommunikation verwendet.
+
+\subsection{Bestandteile}
+
+\begin{itemize}
+\item \textbf{Digitale Zertifikate}: Digitale signierte elektronische Daten, die sich zum Nachwei der Echtheit von Objekten verwenden lassen.
+\item \textbf{Zertifizierungsstellen (Certificate Authority, CA)}: Organisation / Unternehmen, die das CA-Zertifikat bereitstellt und ide Signatur von Zertifikatsanträgen übernimmt.
+\item \textbf{Registrierungsstellen (Registration Authority, RA)}: Organisation, bei der Personen, Maschinen oder auch untergeordnete Zertifizierungsstellen Zertifikate beantragen können. Diese prüft die Richtigkeit der Daten im gewünschten Zertifikat und genehmigt den Zertifikatsantrag, der dann durch die Zertifizierungsstelle signiert wird.
+\item \textbf{Zertikatsperrliste (Certificate Revocation List, CRL)}: eine Liste mit Zertifikaten, die vor Ablauf der Gültigkeit zurückgezogen wurden. Gründe sind z.B. Kompromittierung des Schlüssels oder Ungültige Zertifikatsdaten.
+\end{itemize}
+
+\subsubsection{Modelle}
+
+\begin{itemize}
+\item \textbf{Streng hierarchische PKI}: Oft werden Zertifikate innerhalb einer komplett hierarchischen PKI eingesetzt. Dieses Vertrauensmodell setzt die Existenz einer Wurzelzertifizierungsinstanz (Root-CA) voraus: einer obersten Zertifizierungsstelle, der alle teilnehmenden Parteien vertrauen. In der Praxis gibt es jedoch auf globaler Ebene eine solche Instanz nicht. So betreiben etwa verschiedene Länder und multinationale Unternehmen jeweils eigene hierarchische PKIs mit eigenen Wurzelzertifizierungsinstanzen. Die Ursache dafür liegt weniger in mangelndem Vertrauen in andere PKIs oder Wurzelzertifizierungsinstanzen, als vielmehr im Wunsch nach vollständiger Kontrolle der Regeln innerhalb der eigenen PKI.\\\\
+Damit muss der Nutzer nur das CA-Zertifikat installieren und vertraut automatische die vollständige Hierarchie von Zertifikaten.
+\item \textbf{Cross-Zertifizierung}: Eine Möglichkeit, die Anwendung von Zertifikaten über die Grenzen verschiedener hierarchischer PKIs hinweg zu ermöglichen, ist die Cross-Zertifizierung. Dabei stellen sich zwei Zertifizierungsstellen (meist Wurzelinstanzen) gegenseitig ein (Cross-)Zertifikat aus. Im Unterschied zu normalen Zertifikaten in einer hierarchischen PKI drücken Cross-Zertifikate das Vertrauen zweier gleichberechtigter Parteien aus, d. h. die Regelungen der einen Wurzelinstanz sind für die PKI der anderen Wurzelinstanz nicht verbindlich, oder nur insoweit verbindlich, als sie deren eigenen Regelungen nicht widersprechen. Die Interpretation der durch ein Cross-Zertifikat ausgedrückten Vertrauensbeziehung ist daher manchmal nicht einfach und in vielen Fällen nicht einmal eindeutig.
+\item \textbf{Web of Trust}: Ein zur Zertifizierungshierarchie komplett konträres Vertrauensmodell wird durch die Verschlüsselungssoftware PGP und die Open-Source-Variante Gnu Privacy Guard genutzt. Beide basieren auf OpenPGP und sind zueinander kompatibel. Ein Zertifikat kann von jedem Benutzer (Web-of-Trust-Mitglied) erzeugt werden. Glaubt ein Benutzer daran, dass ein öffentlicher Schlüssel tatsächlich zu der Person gehört, die ihn veröffentlicht, so erstellt er ein Zertifikat, indem er diesen öffentlichen Schlüssel signiert. Andere Benutzer können aufgrund dieses Zertifikates entscheiden, ob auch sie darauf vertrauen wollen, dass der Schlüssel zum angegebenen Benutzer gehört oder nicht. Je mehr Zertifikate an einem Schlüssel hängen, desto sicherer kann man sein, dass dieser Schlüssel tatsächlich dem angegebenen Eigentümer gehört.
+\end{itemize}
+
+\subsubsection{Problem}
+
+Bei den Streng hierarchischen PKI vertraut man, dass das Unternehmen die Identitäten der Seiten gut genug überprüfen. Diese Zertifizierungsstellen bieten verschieden Preisklassen an, umso teurer ein Zertifikat, umso mehr Sicherheitsfaktoren werden bei der Überprüfung der Identität vorgenommen (z.B. persönlicher Besuch bei dem Seiten-Inhaber).
+
+
